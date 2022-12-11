@@ -21,7 +21,7 @@ const Order = () => {
 
     async function getOrder(){
         try{
-            let res = await fetch(`${import.meta.env.VITE_BASE_URL}customer/orders/${currentUser?.user?._id}`)
+            let res = await fetch(`${import.meta.env.VITE_BASE_URL}/customer/orders/${currentUser?.user?._id}`)
     
             let data = await res.json()
     
