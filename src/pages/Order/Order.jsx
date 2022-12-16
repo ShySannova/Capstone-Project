@@ -26,7 +26,7 @@ const Order = () => {
             let data = await res.json()
     
             if(data.success){
-              setOrders(data.data)
+              setOrders(data.data.reverse())
             }
         }
         catch(err){

@@ -59,6 +59,37 @@
                 flex: 1;
                 display: flex;
                 justify-content: flex-end;
+                gap: 20px;
+
+                .userDrop{
+                    // background-color: yellow;
+                    display: flex;
+                    // flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    
+
+                    .dropdown{
+                        background-color: rgba(0, 0, 0, 0.76);
+                        position: absolute;
+                        top: 145%;
+                        padding: 10px 50px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                    
+                        a{
+                            text-decoration: none;
+                            color: white;
+
+                            &:hover{
+                                color: gray;
+                            }
+                        }
+                    }
+                }
+
 
                 button{
                     background-color: #2879fe;

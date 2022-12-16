@@ -2,6 +2,10 @@ import "./Header.scss"
 import { Link, useNavigate } from "react-router-dom"
 import {useDispatch, useSelector} from "react-redux"
 import { resetStore } from "../../redux/userRedux";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowRight from '@mui/icons-material/ArrowRight';
+import { useState } from "react";
 
 
 export default function Header(){
@@ -9,6 +13,8 @@ export default function Header(){
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const { isLogged,isAdmin, currentUser } = useSelector((state) => state.user);
+
+    const [drop, setDrop]=useState(false)
     
 
     function handleClick(){
@@ -33,10 +39,28 @@ export default function Header(){
                     </div>
                     <div className="right">
                         {isLogged && !isAdmin
-                        ?(<div>
-                            <strong>{currentUser?.user?.name}</strong>&nbsp;&nbsp;
-                            <button onClick={handleLogout}>Logout</button>
-                            </div>)
+                        ?( 
+                            <>
+                                <div className="userDrop" onClick={()=>{
+                                        setDrop(!drop)
+                                    }}>
+                                {drop?
+                                    <ArrowDropDownIcon/>
+                                    :<ArrowRight/>}
+                                    <AccountCircleIcon/>
+                                    <div>
+                                        {currentUser?.user?.name}
+                                    </div>
+                                    {drop?
+                                    <div className="dropdown">
+                                        <Link>Profile</Link>
+                                        <Link to='/home/cart'>Cart</Link>
+                                        <Link to='/home/orders'>Orders</Link>
+                                    </div>:null}
+                                </div>
+                                <button onClick={handleLogout}>Logout</button>
+                            </>
+                            )
                         :<button onClick={handleClick}>Login</button>}
                     </div>
                 </div>
