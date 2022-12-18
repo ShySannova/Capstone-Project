@@ -52,6 +52,10 @@
 @media screen and (max-width:756px) {
     .panel{
         .item{
+
+            img{
+                width: 100px;
+            }
             .content{
                 div{
                     flex-direction: column;
