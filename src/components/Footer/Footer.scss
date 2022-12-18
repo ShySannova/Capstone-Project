@@ -60,3 +60,24 @@
       }
     }
   }
+
+
+
+
+@media screen and (max-width:756px) {
+
+  .footer{
+    .top{
+      flex-direction: column;
+    }
+    .bottom{
+      flex-direction: column-reverse;
+
+      .left{
+        flex-direction: column;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+}

@@ -101,3 +101,41 @@
 
     }
 }
+
+
+
+@media screen and (max-width:756px) {
+    
+
+    .header{
+
+        .wrapper{
+            width: 95%;
+            flex-direction: column;
+
+           .left{
+                width: 100%;
+                text-align: center;
+           }
+
+           .right{
+            width: 100%;
+            // background-color: red;
+            justify-content: space-between;
+
+
+                .left{
+                    flex: 2;
+                    justify-content: flex-start;
+                }
+
+                .right{
+                    flex: 1;
+                    gap: 10px;
+                }
+           }
+        }
+    }
+
+
+}

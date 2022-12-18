@@ -1,8 +1,8 @@
 .banner-container{
     background-color: black;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    // position: sticky;
+    // top: 0;
+    // z-index: 1;
 
     .product-banner{
         color: white;
@@ -106,4 +106,30 @@
         }
     }
 
+}
+
+@media screen and (max-width:756px) {
+    
+    .banner-container{
+
+        // position: static;
+        
+        .product-banner{
+    
+            .banner-img{
+                width: 30%;
+            }
+            .banner-info{
+                width: 70%;
+                .content-wrapper{
+                    .actions{
+                        display: none;
+                    }
+                }
+            }
+            .offers{
+                display: none;
+            }
+        }
+    }
 }

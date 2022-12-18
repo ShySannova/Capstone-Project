@@ -114,3 +114,20 @@
     }
 
 }
+
+
+
+@media screen and (max-width:756px) {
+    
+    .restaurants{
+
+        &_container{
+            flex-direction: column;
+
+            a{
+                width: 100%;
+            }
+        }
+    }
+
+}

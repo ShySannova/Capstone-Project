@@ -78,3 +78,31 @@
 
     }
 }
+
+
+@media screen and (max-width:756px) {
+    
+    .home{
+
+        .loginArea{
+            width: 80%;
+            
+            .loginWrapper{
+    
+                .tab{
+                    // background-color: red;
+                    width: 80%;
+                }
+    
+                .container{
+                    .wrapper{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}

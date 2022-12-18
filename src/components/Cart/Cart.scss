@@ -93,3 +93,10 @@
       cursor: pointer;
     }
   }
+
+
+  @media screen and (max-width:756px) {
+    .cart{
+      width: 100%;
+    }
+  }

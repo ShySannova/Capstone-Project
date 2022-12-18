@@ -20,8 +20,8 @@ export default function Restaurant(){
                     <Link to='/' className="logo">Shokutsu</Link>
                 </div>
                 {isLogged && isAdmin?
-                <div>
-                    <strong>{currentUser?.user?.name}</strong>&nbsp;&nbsp;
+                <div className="loggedin">
+                    <strong>{currentUser?.user?.name}</strong>
                     <button onClick={handleClick}>Logout</button>
                 </div>
                 :<div className="right">

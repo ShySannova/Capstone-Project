@@ -49,4 +49,34 @@
 
 }
 
+@media screen and (max-width:756px) {
+    .panel{
+        .item{
+            .content{
+                div{
+                    flex-direction: column;
+                    strong{
+                        width: 100%;
+                        font-size: 12px;
+                    }
+                    p{
+                        width: 100%;
+                        font-size: 12px;
+                    }
+                }
+                div:nth-child(2),
+                div:last-child{
+                    width: 100%;
+                    flex-direction: row;
+                    // background-color: red;
+                    p{
+                        width: auto;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 

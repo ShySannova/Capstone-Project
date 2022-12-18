@@ -89,3 +89,24 @@
 
 
   }
+
+
+
+  @media screen and (max-width:756px) {
+    .slider{
+      
+      .overlay{
+        .wrapper{
+          width: 90%;
+
+          .top{
+            text-align: left;
+          }
+
+          .bottom{
+            text-align: right;
+          }
+        }
+      }
+    }
+  }

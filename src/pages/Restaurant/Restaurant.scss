@@ -31,6 +31,11 @@
             }
         }
 
+        .loggedin{
+            display: flex;
+            gap: 10px;
+        }
+
         .right{
             flex: 1;
             display: flex;
@@ -48,4 +53,18 @@
 
 
 
+}
+
+@media screen and (max-width:756px) {
+    
+    .restaurant{
+        &Wrapper{
+            width: 90%;
+
+            .loggedin{
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
 }
