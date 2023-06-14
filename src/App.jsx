@@ -3,10 +3,7 @@ import {
   createBrowserRouter,
   RouterProvider,
   Outlet,
-<<<<<<< HEAD
   Link,
-=======
->>>>>>> 56c6c46fee24ad2b9059e1750f9f0ad01fde0a63
 } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -30,17 +27,11 @@ console.log(import.meta.env.VITE_BASE_URL)
 const Client =()=>{
   return(
     <div className="app">
-<<<<<<< HEAD
       <div className="ad">Andriod App Available : <Link to="/apk/Shokutsu.apk" target="_blank" download>click here to download</Link></div>
       <Header/>
       <Outlet/>
       <Footer/>
       <div className="apkLink"><Link to="/apk/Shokutsu.apk" target="_blank" download>	&larr; Click to Download App &rarr;</Link></div>
-=======
-      <Header/>
-      <Outlet/>
-      <Footer/>
->>>>>>> 56c6c46fee24ad2b9059e1750f9f0ad01fde0a63
     </div>
   )
 }
