@@ -19,7 +19,9 @@ export default function Footer(){
                     <span>VENDOR</span>
                     <span>HOME</span>
                     <Link to="/apk/Shokutsu.apk" target="_blank" download>APP DOWNLOAD</Link>
-                <h1>About</h1>
+                    </div>
+                <div className="item">
+                    <h1>About</h1>
                     <span>
                     Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
