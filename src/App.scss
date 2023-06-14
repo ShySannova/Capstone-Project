@@ -1,0 +1,46 @@
+.app{
+    min-height: 100vh;
+
+    .ad{
+        padding: 5px;
+        letter-spacing: 2px;
+    }
+
+    .apkLink{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        padding-left: 25px;
+        place-content: center;
+        writing-mode: sideways-lr;
+        -webkit-writing-mode: sideways-lr;
+        -ms-writing-mode: sideways-lr;
+
+        a{
+            color: white;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+    }
+
+}
+
+@media screen and (max-width:756px) {
+
+    .app{
+
+        .ad{
+            padding: 5px;
+            font-size: small;
+            letter-spacing: 1px;
+        }
+
+        .apkLink{
+            display: none;
+        }
+    }
+    
+
+}

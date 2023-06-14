@@ -1,0 +1,76 @@
+.skeletonCard {
+    width: 100%;
+  aspect-ratio: 1/0.75;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+
+  .skeletonImg {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(199, 199, 199);
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+  }
+
+  .skeletonContent {
+    display: flex;
+    justify-content: space-between;
+
+    .skeletonTitle,
+    .skeletonRating {
+      width: 20%;
+      height: 40px;
+      background-color: rgb(199, 199, 199);
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+  }
+  hr {
+    height: 5px;
+    background-color: rgb(199, 199, 199);
+  }
+
+  .skeletonDesc {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(199, 199, 199);
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+  }
+  .skeletonExtra {
+    width: 60%;
+    height: 25px;
+    background-color: rgb(199, 199, 199);
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
