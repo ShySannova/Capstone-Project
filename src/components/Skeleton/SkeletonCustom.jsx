@@ -3,6 +3,7 @@ import "./SkeletonCustom.scss";
 
 const SkeletonCustom = () => {
   return (
+    //loading animation
         <div className="skeletonCard">
             <div className="skeletonImg animate-pulse">
 
