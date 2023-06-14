@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import { Link } from "react-router-dom"
+=======
+>>>>>>> 56c6c46fee24ad2b9059e1750f9f0ad01fde0a63
 import "./Footer.scss"
 
 export default function Footer(){
@@ -19,7 +22,10 @@ export default function Footer(){
                     <span>VENDOR</span>
                     <span>HOME</span>
                     <span>LOGIN</span>
+<<<<<<< HEAD
                     <Link to="/apk/Shokutsu.apk" target="_blank" download>APP DOWNLOAD</Link>
+=======
+>>>>>>> 56c6c46fee24ad2b9059e1750f9f0ad01fde0a63
                 </div>
                 <div className="item">
                     <h1>About</h1>

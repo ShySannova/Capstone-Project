@@ -2,7 +2,10 @@ import { Link } from "react-router-dom"
 import "./RestaurantCard.scss"
 import { useDispatch } from 'react-redux'
 import { isStart } from "../../redux/menuRedux"
+<<<<<<< HEAD
 import SkeletonCustom from "../Skeleton/SkeletonCustom"
+=======
+>>>>>>> 56c6c46fee24ad2b9059e1750f9f0ad01fde0a63
 
 
 const RestaurantCard = ({data}) => {
@@ -12,6 +15,7 @@ const RestaurantCard = ({data}) => {
   return (
     <section className="restaurants">
             <h3>Top Restaurants With Awesome Cuisine</h3>
+<<<<<<< HEAD
             <div className={data?"restaurants_container":"skeleton_container"}>
 
                 {!data?[...Array(9).keys()].map(i=>{
@@ -21,6 +25,11 @@ const RestaurantCard = ({data}) => {
                 :
 
                 (data?.map((item,index)=>{
+=======
+            <div className="restaurants_container">
+
+                {data?.map((item,index)=>{
+>>>>>>> 56c6c46fee24ad2b9059e1750f9f0ad01fde0a63
                     return(
                         <Link to="/restaurant/menu" key={index} onClick={()=>{
                             dispatch(isStart(item))}}>
@@ -45,8 +54,12 @@ const RestaurantCard = ({data}) => {
                             </div>
                         </Link>     
                     )          
+<<<<<<< HEAD
                 }))
             }
+=======
+                })}
+>>>>>>> 56c6c46fee24ad2b9059e1750f9f0ad01fde0a63
 
                 
                 
