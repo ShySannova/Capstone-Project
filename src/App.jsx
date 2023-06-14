@@ -27,7 +27,6 @@ console.log(import.meta.env.VITE_BASE_URL)
 const Client =()=>{
   return(
     <div className="app">
-      <div className="ad">Andriod App Available : <Link to="/apk/Shokutsu.apk" target="_blank" download>click here to download</Link></div>
       <Header/>
       <Outlet/>
       <Footer/>

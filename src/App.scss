@@ -1,30 +1,56 @@
 .app{
     min-height: 100vh;
 
-    .ad{
-        padding: 5px;
-        letter-spacing: 2px;
-    }
-
     .apkLink{
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         display: grid;
-        padding-left: 25px;
+        padding-block: 20px;
         place-content: center;
-        writing-mode: sideways-lr;
-        -webkit-writing-mode: sideways-lr;
-        -ms-writing-mode: sideways-lr;
+        writing-mode: vertical-lr;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: vertical-lr;
+        rotate: 180deg;
 
         a{
-            color: white;
+            color: darkgray;
             letter-spacing: 2px;
             text-decoration: none;
+            padding: 5px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            transition: .4s ease-in-out;
+            -webkit-transition: .4s ease-in-out;
+            -moz-transition: .4s ease-in-out;
+            -ms-transition: .4s ease-in-out;
+            -o-transition: .4s ease-in-out;
+            animation: colorchange .2s infinite;
+            -webkit-animation: colorchange 4s infinite;
+            font-weight: bold;
+
+            &:hover{
+                letter-spacing: 1.5px;
+            }
         }
     }
 
+}
+
+@keyframes colorchange {
+    0%{
+        color: darkgray;
+    }
+    25%{
+        color: skyblue;
+    }
+    50%{
+     color: slategrey;
+}
 }
 
 @media screen and (max-width:756px) {
